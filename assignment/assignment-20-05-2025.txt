@@ -1,0 +1,132 @@
+ASSIGNMENT:
+Name - Saurav gudia 
+Module 1 – Overview of IT Industry
+
+(1)	What is program ?
+      A program is a list of instructions that a computer   follows to do something.
+
+    •	LAB EXERCISE: Write a simple "Hello World" program in two different programming languages of your choice. Compare the structure and syntax.
+
+Html :
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Hello Page</title>
+  </head>
+  <body>
+    <h1>Hello, World</h1>
+  </body>
+</html>
+
+    •	THEORY EXERCISE: Explain in your own words what a program is and how it functions. What is Programming?
+
+    A program is a list of instructions that a computer follows to do something.
+   
+    Think of it like a recipe — it tells the computer step-by-step what to do.
+     
+     Example: A program might tell the computer to show your name, do math, or play a video.
+
+ (2)	What is Programming?
+
+     Programming is the process of writing those instructions for the computer.
+    
+     You use special languages like Python or JavaScript to tell the computer exactly what to do.
+
+    •	What are the key steps involved in the conprogramming process?
+
+Understand > Plan > Code >Test > Fix > Improve.
+
+ (3)	Types of Programming Languages:
+
+      Python, Java, Html, Css, C#
+
+    •	THEORY EXERCISE: What are the main differences between high-level and low-level programming languages?
+     
+     Low language is complex to understand because it contains hard to readblility for humans and high level programming language is yet                easy to understand and Contains good redability .
+       
+ (4)   World  wide web:
+
+World wide web created by tim berners lee on 1989
+And it’s purpose is Information exchange platform.
+     
+ & How internet works:
+
+     The internet is a network that lets computers and devices talk to each other to share information quickly
+
+    • lab exercise: Research and create a diagram of how data is transmitted from a client to a server over the internet ?
+
+client > internet > Router > server
+
+ (5) Network layers on client and server:
+
+
+    •THEORY EXERCISE: Explain the function of the TCP/IP model and its layers.
+
+      TCP/IP model is like a set of rules that helps computers talk to each other over the internet.
+It breaks the process into 4 simple steps application layer , transport layer , internet layer , network access layer
+
+
+ (6) client & server:
+
+     
+    •THEORY EXERCISE: Explain Client Server Communication:
+      
+      Client-server communication is when a client sends a request, and a server responds with the needed information.
+
+ (7) Types of internet connection :
+
+    •LAB EXERCISE: Research different types of internet connections (e.g., broadband, fiber, satellite)
+and list their pros and cons.
+
+1. Broadband 
+Description: High-speed internet over telephone lines or cable TV lines.
+Pros: Widely available in cities and towns, Usually affordable, Stable for most everyday tasks
+Cons: Slower than fiber, Speed may drop during peak hours, Distance from provider affects DSL speed
+
+2. Fiber Optic
+Description: Uses light through glass fibers to transmit data – the fastest internet option.
+Pros: Super fast download and upload speeds, Reliable and stable connection, Great for streaming, gaming, and large file transfers
+Cons: More expensive than other types, Not available in many rural areas
+
+3. Satellite
+Description: Internet from satellites in space, useful in remote areas.
+Pros: Works almost anywhere, even in rural or remote places, Easy to set up without cables
+Cons: Slower speeds and higher delay, Affected by weather, Data limits can be strict
+
+4. Mobile Data 
+Description: Internet via cellular networks on phones or mobile hotspots.
+Pros: Portable – works anywhere with mobile signal, Fast with 4G or 5G in cities, No cables needed
+Cons: Can be expensive, Speed depends on signal strength, Not always reliable in rural areas.
+
+  (8) why is version control is important in software development ?
+
+      Version control serves as a safety net to protect the source code from irreparable harm, giving the development team the freedom to experiment without fear of causing damage or creating code conflicts.
+
+  (9) what are benifits for using GitHub for students?
+       
+      GitHub helps students learn coding, collaborate on projects, and build a professional portfolio—all while using real-world development tools for free.
+
+  (10) what are key difference between web applications and desktop application ?
+       
+       web applications
+	A program that runs in a web browser and needs the internet to work, like Gmail or Facebook.
+       desktop application
+        A program you install on your computer that works directly on your device, like Microsoft Word or Photoshop.
+	
+	
+
+
+
+
+
+
+   
+
+
+
+
+
+ 
+
+
+
