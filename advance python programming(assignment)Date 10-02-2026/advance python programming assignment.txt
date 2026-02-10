@@ -1,0 +1,285 @@
+1. Printing on Screen
+
+Theory :
+
+ • Introduction to the print () function in python.
+
+The print() function is one of the most basic and important functions in Python. It is used to display output on the screen (console).
+
+• Formatting outputs using f-strings and format().
+
+Formatting output means displaying variables and values in a clean and readable way. Python provides two common methods:
+
+f-strings (formatted string literals) – modern and recommended
+
+format() method – older but still useful
+
+name = "Saurav"
+age = 21
+
+print(f"My name is {name} and I am {age} years old.")
+
+•  write python programme to print hello world on screen
+
+print("hello world")
+
+
+2. Reading data from keyboard
+
+• Using the input() Function to Read User Input from the Keyboard
+
+The input() function in Python is used to take input from the user through the keyboard. It allows the program to interact with the user.
+
+input("message")
+
+• converting user input into different data types.(e.g., int, float, etc).
+
+Converting User Input into Different Data Types in Python
+
+In Python, the input() function always returns the entered value as a string (str). To use the input as a number or another data type, you must convert it using type casting functions like int(), float(), etc.
+
+num = input("Enter a number: ")
+print(num + num)
+
+Lab: 
+
+	• write a python program to read a name and age from the user and prit a formatted output.
+
+Here is a simple Python program that reads a name and age from the user and prints a formatted output.
+
+# Program to read name and age and print formatted output
+
+# Read input from user
+name = input("Enter your name: ")
+age = int(input("Enter your age: "))
+
+# Print formatted output using f-string
+print(f"Hello, {name}! You are {age} years old.")
+
+
+
+3. opening and closing files
+
+• Opening files in different mode.('r','w','a','r+','w+').
+
+1. Read Mode ('r')
+
+Read mode is used to open a file for reading only. It allows the user to view the contents of the file but does not allow any changes. The file must exist, otherwise Python will show an error.
+
+2. Write Mode ('w')
+
+Write mode is used to open a file for writing. It allows the user to write new content to the file. If the file already exists, its contents will be overwritten. If the file does not exist, a new file will be created.
+
+3. Append Mode ('a')
+
+Append mode is used to add new content at the end of the file. It does not delete or overwrite existing content. If the file does not exist, Python will create a new file.
+
+4. Read and Write Mode ('r+')
+
+Read and write mode allows both reading and writing in the same file. The file must already exist. It does not automatically delete existing content, and the user can modify the file.
+
+5. Write and Read Mode ('w+')
+
+Write and read mode allows both writing and reading in the file. If the file already exists, its content will be overwritten. If the file does not exist, Python will create a new file.
+
+
+• Using the open() function to create and access files.
+
+Using the open() Function to Create and Access Files in Python
+
+The open() function in Python is used to create a new file or open an existing file for reading, writing, or appending. It returns a file object which allows the user to perform various file operations such as reading, writing, and modifying the file. The open() function requires at least two parameters: the file name and the mode in which the file should be opened. If the file does not exist and the mode allows writing (such as 'w' or 'a'), Python will automatically create the file.
+
+• Closing Files Using close() in Python
+
+The close() function is used to close an opened file after completing file operations such as reading or writing. Closing a file releases the system resources associated with the file and ensures that all changes are properly saved. It is considered good practice to always close a file after use to prevent data loss and free memory.
+
+
+4.Reading and writing files
+
+• Reading from a file using read(), readline(), readlines().
+
+Reading from a File Using read(), readline(), and readlines() in Python
+
+Python provides different methods to read the contents of a file. These methods allow the user to read the entire file, a single line, or all lines as a list.
+
+1. read() Method
+
+The read() method is used to read the entire content of the file at once. It returns the content as a single string. It is useful when you want to read all the data from the file.
+
+Example:
+
+file = open("example.txt", "r")
+content = file.read()
+print(content)
+file.close()
+
+2. readline() Method
+
+The readline() method is used to read one line at a time from the file. Each time the method is called, it reads the next line from the file.
+
+Example:
+
+file = open("example.txt", "r")
+line = file.readline()
+print(line)
+file.close()
+
+3. readlines() Method
+
+The readlines() method is used to read all lines of the file and returns them as a list. Each line in the file becomes an element in the list.
+
+Example:
+
+file = open("example.txt", "r")
+lines = file.readlines()
+print(lines)
+file.close()
+
+
+• Writing to a File Using write() and writelines() in Python
+
+Python provides methods to write data into files. The write() and writelines() methods are used to add content to a file. These methods are used after opening the file in write ('w'), append ('a'), or write-read ('w+') mode.
+
+1. write() Method
+
+The write() method is used to write a single string to a file. It writes the content exactly as given. If you want to write multiple lines, you need to include newline characters (\n) manually.
+
+Example:
+
+file = open("example.txt", "w")
+file.write("Hello World\n")
+file.write("Welcome to Python")
+file.close()
+
+
+This writes two lines into the file.
+
+2. writelines() Method
+
+The writelines() method is used to write multiple lines to a file at once. It takes a list of strings as input. Newline characters (\n) must be added manually if needed.
+
+Example:
+
+file = open("example.txt", "w")
+lines = ["Hello World\n", "Welcome to Python\n", "File Handling Example"]
+file.writelines(lines)
+file.close()
+
+
+This writes all the lines from the list into the file.
+
+
+5.Exception handling 
+
+• Introduction to exceptions and how to handle them using try, except, and finally.
+
+Introduction to Exceptions and Exception Handling in Python
+
+An exception is an error that occurs during the execution of a program. When an exception occurs, the program stops running and displays an error message. To prevent the program from crashing, Python provides exception handling using try, except, and finally blocks.
+
+Exception handling allows the program to handle errors properly and continue execution.
+
+• Understanding multiple exceptions and custom exceptions.
+
+Understanding Multiple Exceptions and Custom Exceptions in Python
+
+In Python, a program may produce different types of errors. These errors can be handled using multiple except blocks. Python also allows users to create their own exceptions, called custom exceptions, to handle specific situations.
+
+1. Multiple Exceptions
+
+Multiple exceptions occur when different types of errors are possible in a program. Python allows the use of multiple except blocks to handle each error separately. This helps in providing specific error messages for different types of problems.
+
+Example:
+
+try:
+    num = int(input("Enter a number: "))
+    result = 10 / num
+
+except ValueError:
+    print("Invalid input. Please enter a number.")
+
+except ZeroDivisionError:
+    print("Cannot divide by zero.")
+
+
+In this example:
+
+ValueError occurs if the user enters non-numeric input.
+
+ZeroDivisionError occurs if the user enters zero.
+
+2. Custom Exceptions
+
+Custom exceptions are user-defined exceptions. They are created by defining a new class that inherits from the built-in Exception class. Custom exceptions are used to handle specific conditions based on program requirements.
+
+Example:
+
+class InvalidAgeError(Exception):
+    pass
+
+try:
+    age = int(input("Enter age: "))
+    
+    if age < 18:
+        raise InvalidAgeError("Age must be 18 or above")
+
+except InvalidAgeError as e:
+    print(e)
+
+6. Class and Object (OOP Concepts)
+
+• Understanding the concepts of classes, objects, attributes, and methods in Python.
+
+A class is a blueprint used to create objects. An object is an instance of a class. Attributes are variables that store data, and methods are functions that define the behavior of the object. These concepts form the foundation of Object-Oriented Programming in Python.
+
+• Difference between local and global variables.
+
+A local variable is declared inside a function and can only be used within that function. A global variable is declared outside all functions and can be accessed anywhere in the program.
+
+
+7. Inheritance
+
+
+• Single, Multilevel, Multiple, Hierarchical, and Hybrid inheritance in Python.
+
+Inheritance is the process by which one class acquires properties and methods of another class. Python supports different types of inheritance such as Single, Multilevel, Multiple, Hierarchical, and Hybrid inheritance. It helps in code reuse and better program organization.
+
+• Using the super() function to access properties of the parent class.
+
+The super() function is used to access the methods and properties of the parent class in inheritance. It allows the child class to call the parent class constructor or methods without using the parent class name directly.
+
+8.Method overloading and overriding.
+
+• Method overloading: defining multiple methods with the same name but different parameters.
+
+Method overloading is the ability to define multiple methods with the same name but different parameters. In Python, it is achieved using default arguments or variable-length arguments, allowing the method to handle different numbers of inputs.
+
+• Method overriding: redefining a parent class method in the child class.
+
+Method overriding is the process of redefining a method in the child class that already exists in the parent class. It allows the child class to provide a different implementation of the parent class method.
+
+
+9. SQLite3 and PyMySQL (Database Connectors)
+
+• Introduction to SQLite3 and PyMySQL for database connectivity.
+SQLite3 and PyMySQL are used for database connectivity in Python. SQLite3 is a built-in, file-based database, while PyMySQL is used to connect Python with MySQL server-based databases. They allow storing, retrieving, and managing data in databases.
+
+•Python uses SQLite3 and PyMySQL connectors to execute SQL queries. These connectors allow creating tables, inserting data, retrieving data, and managing databases using SQL commands through Python programs.
+
+10. Search and match function.
+
+• Using re.search() and re.match() functions in Python’s re module for pattern matching.
+
+Search and match functions in Python are used to find patterns in text using the re module. Functions like match(), search(), and findall() help in locating and matching patterns in strings.
+
+• Difference between search and match.
+
+The match() function checks for a pattern only at the beginning of the string, while the search() function checks for a pattern anywhere in the string. Both are used for pattern matching in Python using the re module.
+
+
+
+
+
+
+
+
